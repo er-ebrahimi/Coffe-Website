@@ -5,8 +5,8 @@
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(355, 70%, 54%);
-    --first-color-alt: hsl(355, 66%, 50%);
+    --first-color: #CF9A72;
+    --first-color-alt: #EACBAC;
     --title-color: hsl(355, 4%, 15%);
     --text-color: hsl(355, 4%, 35%);
     --text-color-light: hsl(355, 4%, 55%);
@@ -242,4 +242,76 @@ body.dark-theme {
 
 .active-link {
     color: var(--first-color);
+}
+
+/* home */
+.home__container {
+    padding-top: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.home__img {
+    width: 520px;
+    justify-self: center;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__description {
+    font-size: var(--small-font-size);
+    padding: 0 2rem;
+    margin-bottom: var(--mb-2-5);
+}
+
+/* button */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1.15rem 2.75rem;
+    font-weight: var(--font-medium);
+    border-radius: 3rem;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+/* Giving */
+.giving__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1.5rem;
+}
+
+.giving__content {
+    text-align: center;
+    justify-content: center;
+}
+
+.giving__img {
+    width: 120px;
+    height: 7rem;
+    transition: .3s;
+}
+
+.giving__img:hover {
+    transform: translateY(-.25rem);
+}
+
+/* Celebrate */
+.reserve__data {
+    text-align: center;
+
+}
+
+.reserve__container {
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+.resever__img {
+    width: 280px;
 }
