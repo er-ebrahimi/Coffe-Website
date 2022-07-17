@@ -363,3 +363,12 @@ body.dark-theme {
 .product__card:hover .product__img {
     transform: translateY(-.5rem);
 }
+
+/* Swiper */
+.swiper-pagination-bullet {
+    background-color: var(--text-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
