@@ -120,6 +120,31 @@ body.dark-theme {
     --container-color: hsl(355, 16%, 16%);
 }
 
+.dark-theme .scroll-header,
+.dark-theme .nav__menu {
+    box-shadow: 0 2px 4px hsla(0, 0%, 4%, .3);
+}
+
+.dark-theme .reserving__container {
+    background-color: var(--container-color);
+}
+
+.dark-theme .reserving__input {
+    background-color: var(--body-color);
+}
+
+.dark-theme .reserving__button {
+    background-color: var(--first-color);
+}
+
+.dark-theme .reserving__button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background: hsl(355, 8%, 30%);
+}
+
 /* dark them TODO line 135 - 158 */
 
 .container {
@@ -466,7 +491,7 @@ body.dark-theme {
 
 .scrollup {
     position: fixed;
-    bottom: 4%;
+    bottom: -30%;
     right: 1rem;
     color: var(--container-color);
     box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
@@ -492,6 +517,9 @@ body.dark-theme {
     font-size: 1.25rem;
 }
 
+.show-scroll {
+    bottom: 2rem;
+}
 
 /* scroll bar */
 

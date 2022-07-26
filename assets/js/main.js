@@ -77,9 +77,26 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
-
+window.addEventListener('scroll', () => {
+    const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
+})
 
 /*=============== DARK LIGHT THEME ===============*/
-
+const darkbot = document.getElementById('theme-button');
+const body = document.getElementsByTagName('body');
+darkbot.addEventListener('click', () => {
+    // body[0].classList.add('dark-theme')
+    if (body[0].classList.contains('dark-theme')) {
+        body[0].classList.remove('dark-theme')
+        darkbot.classList.remove('bx-sun')
+        darkbot.classList.add('bx-moon')
+    }
+    else {
+        body[0].classList.add('dark-theme')
+        darkbot.classList.remove('bx-moon')
+        darkbot.classList.add('bx-sun')
+    }
+})
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
