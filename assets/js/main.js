@@ -100,3 +100,17 @@ darkbot.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+sr.reveal(`.home__img, .prodect__container, .footer__container`)
+sr.reveal(`.home__data`, { delay: 500 })
+sr.reveal(`.giving__content, .product__card`, { interval: 100 })
+sr.reveal(`.reserve__data, .reserving__form`, { origin: 'left' })
+sr.reveal(`.resever__img, .reserving__img`, { origin: 'right' })
